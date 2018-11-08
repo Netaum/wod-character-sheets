@@ -36,6 +36,11 @@ $(function(){
         $(this).html(newText);
     });
 
+    $(".dropdown-content").click(function(eventData){
+        var value = eventData.target.innerText;
+        $(this).siblings("input").val(value);
+    });
+
     $(".wod-square").click(function(eventData){
         var selection = Number(eventData.target.attributes["vl"].value);
         var text = $(this).text();
