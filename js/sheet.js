@@ -37,6 +37,15 @@ var disciplines = [
     "Thin-Blood Alchemy",
 ];
 
+var fillCircle = "e";
+var voidCircle = "d";
+
+var sheet = {
+    str : 1,
+    dex: 1,
+    vit: 1
+}
+
 $(function(){
 
     fillComboBox("predator_type", predatorTypes, "#");
@@ -81,11 +90,25 @@ $(function(){
         return newText;
     }
 
+    function fieldValue(text, index, charFilled){
+        var curText = text.substring(index-1, index);
+        return curText === charFilled;
+    }
+
     $(".wod-att").click(function(eventData){
 
         var selection = Number(eventData.target.attributes["vl"].value);
         var text = $(this).text();
-        var newText = swap(text, selection, "d", "e");
+        var newText = swap(text, selection, voidCircle, fillCircle);
+
+        var value = selection;
+        if(fieldValue(text, selection, fillCircle)){
+            value -= 1;
+        }
+
+        var att = $(this).attr('id');
+        sheet[att] = value;
+
         $(this).html(newText);
     });
 
