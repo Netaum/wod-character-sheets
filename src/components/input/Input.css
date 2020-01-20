@@ -1,0 +1,108 @@
+@font-face {
+    font-family: delavan;
+    src: url(../../assets/fonts/f1.woff)format("woff");
+}
+
+.position {
+    position: relative;
+}
+
+.font-header{
+    position: absolute;
+    font-family: delavan;
+    margin:0;
+    height: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    text-transform: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    mix-blend-mode: normal;
+    font-style: normal;
+    white-space: nowrap;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: auto;
+    margin-top:-7.6px;
+}
+
+.input_header {
+    font: 10px 'Oleo Script', Helvetica, sans-serif;
+    border: none;
+    border-color: transparent;
+    color: #2b2b2b;
+    width: 120px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.input_header_short {
+    width: 98px;
+}
+
+.c1 {
+    left:7.563%;
+}
+.c2 {
+    left:37.8151%;
+}
+.c3 {
+    left:68.0672%;
+}
+
+.l1 {
+    top:10.2921%;
+}
+.l2 {
+    top:12.4301%;
+}
+.l3 {
+    top:14.5682%;
+}
+
+.l4 {
+    top:23.0544%;
+}
+.l5 {
+    top:25.1924%;
+}
+.l6 {
+    top:27.3304%;
+}
+
+.dropdown-base {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.dropdown-content span {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content span:hover {background-color: gainsboro}
+
+.dropdown-base:hover .dropdown-content {
+    display: block;
+}
+
+.input-dropdown:hover .dropdown-content {
+    display: block;
+}

@@ -1,0 +1,137 @@
+@font-face{
+    font-family: wod;
+    src:url(../../assets/fonts/wod1.woff)format("woff");
+}
+
+.wod{
+    font-family: wod;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: normal;
+    visibility: visible;
+    color: black;
+    word-spacing: 0.000000px;
+    position: absolute;
+    white-space: pre;
+    transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -webkit-transform-origin: 0 100%;
+    unicode-bidi: bidi-override;
+    z-index: 2;
+    background-color: white;
+}
+.wod-attribute{
+    font-size: 12px;
+    margin-top: -8.4px;
+}
+
+.wod-skill{
+    font-size: 12px;
+    margin-top: -8.4px;
+}
+
+.wod-spendable{
+    font-size: 14px;
+    margin-top: -9.8px;
+}
+
+.cwa1{
+    left: 21.6396%;
+}
+.cwa2{
+    left: 51.8366%;
+}
+.cwa3{
+    left: 81.9026%;
+}
+.cwa4{
+    left: 22.7058%;
+}
+.cwa5{
+    left: 52.9579%;
+}
+
+.cws1{
+    left: 22.8738%;
+}
+.cws2{
+    left: 53.126%;
+}
+.cws3{
+    left: 83.3781%;
+}
+
+.lwa1{
+    top: 22.8%;
+}
+.lwa2{
+    top: 24.9381%;
+}
+.lwa3{
+    top: 27.0761%;
+}
+.lwa4{
+    top: 33.7097%;
+}
+
+.cwd1{
+    left: 21.4536%;
+}
+.cwd2{
+    left: 52.0393%;
+}
+
+.lwd1{
+    top: 61.1%;
+}
+.lwd2{
+    top: 73.9334%;
+}
+
+.cwm1{
+    left: 24.2017%;
+}
+.cwm2{
+    left: 53.1811%;
+}
+
+.lwm1{
+    top: 87.4743%;
+}
+.lwm2{
+    top: 89.6312%;
+}
+.lwm3{
+    top: 91.6692%;
+}
+.lwm4{
+    top: 93.8885%;
+}
+.lwm5{
+    top: 96.0453%;
+}
+
+.blood-potency-fill{
+    top: 63.5431%;
+    margin-top: -10px;
+    left: 68.0672%;
+}
+
+.humanity-fill{
+    top: 68.8687%;
+    margin-top: -9.8px;
+    left: 68.0672%;
+}
+
+.hunger-fill{
+    top: 74.006%;
+    margin-top: -8px;
+    left: 74.1176%;
+}
+
+span.no_selection {
+    -webkit-user-select: none; /* webkit (safari, chrome) browsers */
+    -moz-user-select: none; /* mozilla browsers */
+    -khtml-user-select: none; /* webkit (konqueror) browsers */
+    -ms-user-select: none; /* IE10+ */
+}

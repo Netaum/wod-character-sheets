@@ -1,0 +1,22 @@
+{
+  "name": "wod-character-sheets",
+  "version": "1.0.0",
+  "description": "An app for V5 sheets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Netaum/wod-character-sheets.git"
+  },
+  "author": "Antonio F C Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Netaum/wod-character-sheets/issues"
+  },
+  "homepage": "https://github.com/Netaum/wod-character-sheets#readme",
+  "dependencies": {
+    "react": "16.12.0"
+  }
+}
