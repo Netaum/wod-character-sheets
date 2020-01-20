@@ -1,5 +1,7 @@
 import Input from '../input/Input'
 import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 
 var predatorTypes = [
     "Alleycat",
@@ -27,9 +29,10 @@ var clanNames = [
 ];
 
 function Header() {
+    const { t } = useTranslation();
     return(
         <div>
-            <Input name="Name" column="c1" line="l1" type="input" />
+            <Input name={t('common:header.name')} column="c1" line="l1" type="input" />
             <Input name="Concept" column="c1" line="l2" type="input" />
             <Input name="Predator" column="c1" line="l3" type="dropdown" options={predatorTypes} />
             <Input name="Chronicle" column="c2" line="l1" type="input" />

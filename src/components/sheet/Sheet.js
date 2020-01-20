@@ -6,6 +6,13 @@ import Ability from '../ability/Ability';
 import Skill from '../skill/Skill';
 
 class Sheet extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {name: "Força"};
+    }
+
+    
+
     render() {
         return (
             <div className="page_size_complete page_shadow">

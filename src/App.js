@@ -1,17 +1,10 @@
 import React from 'react';
 import './App.css';
-
-function Welcome(props){
-   return <h1>Hello, {props.name}</h1>;
-}
+import Sheet from './components/sheet/Sheet';
 
 function App(){
   return (
-    <div>
-      <Welcome name="Neto" />
-      <Welcome name="Teste" />
-      <Welcome name="Outro" />
-    </div>
+        <Sheet />
   );
 }
 

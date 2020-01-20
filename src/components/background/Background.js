@@ -4,7 +4,7 @@ import './Background.css';
 function Background() {
     return(
         <div id="backgroud">
-            <img className="background_image" src="background-fill.png" alt="" /> 
+            <img className="background_image" src="background-fill.png" alt=""/> 
         </div>
     );
 }
