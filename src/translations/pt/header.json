@@ -1,0 +1,34 @@
+{
+    "name": "Nome",
+    "concept": "Conceito",
+    "predator": "Predador",
+    "chronicle": "Crônica",
+    "ambition": "Ambição",
+    "clan": "Clã",
+    "sire": "Mestre",
+    "desire": "Desejo",
+    "generation": "Geração",
+    "predatorTypes": [
+        "Vira-Latas",
+        "Muambeiro",
+        "Sanguessuga",
+        "Apegado",
+        "Consensualista",
+        "Fazendeiro",
+        "Osiris",
+        "Corujão",
+        "VIP",
+        "Sereia"
+    ],
+    "clanNames": [
+        "Brujah",
+        "Gangrel",
+        "Malcaviano",
+        "Nosferatu",
+        "Toreador",
+        "Tremere",
+        "Ventrue",
+        "Caitiff",
+        "Sangue Fraco"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Name",
+    "concept": "Concept",
+    "predator": "Predator",
+    "chronicle": "Chronicle",
+    "ambition": "Ambition",
+    "clan": "Clan",
+    "sire": "Sire",
+    "desire": "Desire",
+    "generation": "Generation",
+    "predatorTypes": [
+        "Alleycat",
+        "Bagger",
+        "Blood Leech",
+        "Cleaver",
+        "Consensualist",
+        "Farmer",
+        "Osiris",
+        "Sandman",
+        "Scene Queen",
+        "Siren"
+    ],
+    "clanNames": [
+        "Brujah",
+        "Gangrel",
+        "Malkavian",
+        "Nosferatu",
+        "Toreador",
+        "Tremere",
+        "Ventrue",
+        "Caitiff",
+        "Thin-Blooded"
+    ]
+}
