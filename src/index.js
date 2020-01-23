@@ -11,6 +11,10 @@ import common_en from  "./translations/en/common.json";
 import common_pt from  "./translations/pt/common.json";
 import header_en from "./translations/en/header.json";
 import header_pt from "./translations/pt/header.json";
+import ability_en from  "./translations/en/ability.json";
+import ability_pt from  "./translations/pt/ability.json";
+import skill_en from "./translations/en/skill.json";
+import skill_pt from "./translations/pt/skill.json";
 
 i18n
   .use(initReactI18next) 
@@ -18,11 +22,15 @@ i18n
     resources: {
       en: {
         common: common_en,
-        header: header_en
+        header: header_en,
+        ability: ability_en,
+        skill: skill_en,
       },
       pt: {
         common: common_pt,
-        header: header_pt
+        header: header_pt,
+        ability: ability_pt,
+        skill: skill_pt,
       }
     },
     lng: "pt",

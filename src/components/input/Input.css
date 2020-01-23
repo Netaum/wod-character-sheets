@@ -9,7 +9,7 @@
 
 .font-header{
     position: absolute;
-    font-family: delavan;
+    /* font-family: delavan; */
     margin:0;
     height: 14px;
     font-weight: 500;

@@ -1,11 +1,13 @@
 import React from 'react';
 import Text from '../text/Text';
 import Fill from '../fill/Fill';
+import { useTranslation } from 'react-i18next';
 
 function Skill() {
+    const { t } = useTranslation();
     return (
         <div>
-            <Text name="Athletics................................" type="font-skill" column="ck1" line="lk1" />
+            <Text name={t('skill:athletics')} repeatChar="." lineLenght="40" type="font-skill" column="ck1" line="lk1" />
             <Fill name="ath" lenght="5" type="skill" firstFill="false" shape="circle" column="cws1" line="lk1"/>
 
             <Text name="Brawl...................................." type="font-skill" column="ck1" line="lk2" />

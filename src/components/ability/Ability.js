@@ -1,11 +1,13 @@
 import React from 'react';
 import Text from '../text/Text';
 import Fill from '../fill/Fill';
+import { useTranslation } from 'react-i18next';
 
 function Ability() {
+    const { t } = useTranslation();
     return (
         <div>
-            <Text name="Strength" type="font-ability" column="c1" line="l4" />
+            <Text name={t('ability:strength')} type="font-ability" column="c1" line="l4" />
             <Fill name="str" lenght="5" type="attribute" firstFill="true" shape="circle" column="cwa1" line="lwa1"/>
 
             <Text name="Charisma" type="font-ability" column="c2" line="l4" />
