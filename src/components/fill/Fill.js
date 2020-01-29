@@ -1,12 +1,12 @@
 import React from 'react';
 import './Fill.css';
+import SheetContext from '../../contexts/SheetContext';
 
 class Fill extends React.Component {
-    constructor(props) {
-        super(props);
+    static contextType = SheetContext;
 
-        let firstFill = props.firstFill === "true";
-        let initialValue = firstFill ? 1 : 0;
+    constructor(props, context) {
+        super(props, context);
         this.len = parseInt(props.lenght);
 
         if (props.type === "attribute")
@@ -15,14 +15,6 @@ class Fill extends React.Component {
             this.type = "wod-skill";
         else this.type = "wod-spendable";
 
-        this.state = {
-            values: Array(this.len),
-            value: initialValue,
-            firstFill: firstFill
-        };
-
-        this.state.values = this.fillArray(this.len, -1, false, firstFill);
-
         if (props.shape === "circle") {
             this.fillChar = "e";
             this.emptyChar = "d";
@@ -30,31 +22,12 @@ class Fill extends React.Component {
             this.fillChar = "f";
             this.emptyChar = "a";
         }
+
+        this.context.createField(props.type, props.name, this.len, props.firstFill === "true" ? 1 : 0);
     }
-
-    fillArray(len, index, indexState, firstFill) {
-        let values = Array(len);
-        for (let i = 0; i < len; i++) {
-            if (i === 0 && firstFill === true)
-                values[i] = true;
-            else if (i === index)
-                values[i] = !indexState;
-            else
-                values[i] = index >= i ? true : false;
-        }
-
-        return values;
-    }
-
     handleClick(index) {
-
-        let state = this.state.values[index];
-        let values = this.fillArray(this.len, index, state, this.state.firstFill);
-        let value = values.reduce((total, i) => total + (i === true ? 1 : 0));
-        this.setState({
-            values: values,
-            value: value
-        });
+        const props = this.props;
+        this.context.update(props.type, props.name, index);
     }
 
     item(index, value) {
@@ -64,9 +37,11 @@ class Fill extends React.Component {
     }
 
     line(position) {
+        const props = this.props;
+        const values = this.context[props.type][props.name].fill;
         return (
             <span id={this.props.name} className={`wod ${this.type} ${position}`}>
-                {this.state.values.map((e, i) => (
+                {values.map((e, i) => (
                     this.item(i, e)
                 ))}
             </span>
@@ -87,7 +62,6 @@ class Fill extends React.Component {
         if (this.props.position !== undefined)
             position = this.props.position;
         else position = `${this.props.column} ${this.props.line}`;
-
         return (
             <div>
                 {this.line(position)}
