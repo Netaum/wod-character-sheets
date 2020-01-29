@@ -18,7 +18,7 @@ class App extends React.Component {
 
     if (!sheet[field][key]) {
       sheet[field][key] = {
-        startValue: 0,
+        startValue: initialValue,
         value: initialValue,
         fill: this.createArray(Array(length), initialValue, -1)
       };
@@ -29,8 +29,9 @@ class App extends React.Component {
 
   createArray(array, initialValue, index) {
     for (let i = 0; i < array.length; i++) {
-      if (i < initialValue)
-      array[i] = true;
+      if (i < initialValue) {
+        array[i] = true;
+      }
       else if (i === index) {
         array[i] = !array[i];
       }
