@@ -1,0 +1,22 @@
+{
+    "attributes": "ATTRIBUTES",
+    "skills": "SKILLS",
+    "diciplines": "DISCIPLINES",
+    "physical": "Physical",
+    "social": "Social",
+    "mental": "Mental",
+    "health": "Health",
+    "willpower": "Willpower",
+    "bloodPotency": "Blood Potency",
+    "humanity": "Humanity",
+    "hunger": "Hunger",
+    "ressonance": "Resonance",
+    "hunting": "Hunting",
+    "bloodSurge": "Blood Surge",
+    "mendAmount": "Mend Amount",
+    "powerBonus": "Power Bonus",
+    "rouseReRoll": "Rouse Re-Roll",
+    "feedingPenalty": "Feeding Penalty",
+    "banSeverity": "Bane Severity",
+    "advantagesFlaws": "ADVANTAGES & FLAWS"
+}

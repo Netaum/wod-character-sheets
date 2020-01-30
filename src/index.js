@@ -15,6 +15,8 @@ import ability_en from  "./translations/en/ability.json";
 import ability_pt from  "./translations/pt/ability.json";
 import skill_en from "./translations/en/skill.json";
 import skill_pt from "./translations/pt/skill.json";
+import labels_en from "./translations/en/labels.json";
+import labels_pt from "./translations/pt/labels.json";
 
 i18n
   .use(initReactI18next) 
@@ -25,15 +27,17 @@ i18n
         header: header_en,
         ability: ability_en,
         skill: skill_en,
+        labels: labels_en,
       },
       pt: {
         common: common_pt,
         header: header_pt,
         ability: ability_pt,
         skill: skill_pt,
+        labels: labels_pt,
       }
     },
-    lng: "pt",
+    lng: "en",
     fallbackLng: "en",
 
     interpolation: {

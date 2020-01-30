@@ -1,0 +1,22 @@
+{
+    "attributes": "ATRIBUTOS",
+    "skills": "PERÍCIAS",
+    "diciplines": "DICIPLINAS",
+    "physical": "Fisico",
+    "social": "Social",
+    "mental": "Mental",
+    "health": "Vitalidade",
+    "willpower": "Força de Vontade",
+    "bloodPotency": "Potência do Sangue",
+    "humanity": "Humanidade",
+    "hunger": "Fome",
+    "ressonance": "Ressonância",
+    "hunting": "Caçada",
+    "bloodSurge": "Blood Surge",
+    "mendAmount": "Mend Amount",
+    "powerBonus": "Bonus de Poder",
+    "rouseReRoll": "Rouse Re-Roll",
+    "feedingPenalty": "Penalidade Fome",
+    "banSeverity": "Severidade Ban",
+    "advantagesFlaws": "Vantages & Desvantagens"
+}

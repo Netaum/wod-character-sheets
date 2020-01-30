@@ -1,0 +1,169 @@
+@font-face {
+    font-family: delavan;
+    src: url(../../assets/fonts/f1.woff)format("woff");
+}
+
+
+
+.font-label{
+    position: absolute;
+    font-family: delavan;
+    margin:0;
+    font-weight: 500;
+    opacity: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    text-transform: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    mix-blend-mode: normal;
+    font-style: normal;
+    white-space: nowrap;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: auto;
+}
+
+.font-sub0{
+    height: 24px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.font-sub1{
+    font-size: 14px;
+    line-height: 17px;
+    height: 17px;
+}
+
+.font-sub2{
+    font-size: 12px;
+    line-height: 14px;
+    height: 14px;
+}
+
+.label_attribute{
+    top: 17.8265%;
+    margin-top: -13.1px;
+    left: 39.9563%;
+    width: 140px;
+}
+
+.label_skill{
+    top: 36.7126%;
+    margin-top: -13.1px;
+    left: 45.077%;
+    width: 87px;
+}
+
+.label_discipline {
+    top: 58.8057%;
+    margin-top: -13.1px;
+    left: 24.8252%;
+    width: 138px;
+}
+
+.label_advantages{
+    top: 85.2938%;
+    margin-top: -13.1px;
+    left: 16.7233%;
+    width: 232px;
+}
+
+.label_blood{
+    top: 60.3709%;
+    margin-top: -9.3px;
+    left: 72.605%;
+    width: 111px;
+}
+
+.label_humanity{
+    top: 65.716%;
+    margin-top: -9.3px;
+    left: 75.6303%;
+    width: 83px;
+}
+
+.label_hunger{
+    top: 71.0611%;
+    margin-top: -9.3px;
+    left: 77.1429%;
+    width: 68px;
+}
+
+.label_extra1{
+    top: 76.5715%;
+    margin-top: -7.6px;
+    left: 66.5546%;
+    width: 79px;
+}
+.label_extra2{
+    top: 76.5715%;
+    margin-top: -7.6px;
+    left: 84.7059%;
+    width: 65px;
+}
+.label_extra3{
+    top: 81.9166%;
+    margin-top: -7.6px;
+    left: 66.5546%;
+    width: 87px;
+}
+.label_extra4{
+    top: 81.9166%;
+    margin-top: -7.6px;
+    left: 81.6222%;
+    width: 96px;
+}
+.label_extra5{
+    top: 87.2618%;
+    margin-top: -7.6px;
+    left: 66.5546%;
+    width: 93px;
+}
+.label_extra6{
+    top: 87.2631%;
+    margin-top: -7.7px;
+    left: 81.6807%;
+    width: 96px;
+}
+.label_extra7{
+    top: 92.6069%;
+    margin-top: -7.6px;
+    left: 65.042%;
+    width: 107px;
+}
+.label_extra8{
+    top: 92.6069%;
+    margin-top: -7.6px;
+    left: 81.6807%;
+    width: 95px;
+}
+
+.l1_attribute{
+    top: 20.817%;
+    margin-top: -9.3px;
+}
+.l2_attribute{
+    top: 31.5072%;
+    margin-top: -9.3px;
+}
+.c1_attribute{
+    left: 13.6134%;
+}
+.c2_attribute{
+    left: 46.8648%;
+}
+.c3_attribute{
+    left: 75.562%;
+}
+.c4_attribute{
+    left: 31.7647%;
+}
+.c5_attribute{
+    left: 58.9399%;
+}
