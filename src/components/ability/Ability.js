@@ -34,6 +34,8 @@ function Ability() {
             <Text name={t('ability:resolve')} type="font-ability" column="c3" line="l6" />
             <Fill name="resolve" lenght="5" type="attribute" firstFill="true" shape="circle" column="cwa3" line="lwa3"/>
 
+            <Fill name="health" lenght="10" type="expendable" firstFill="false" shape="square" column="cwa4" line="lwa4"/>
+            <Fill name="willpower" lenght="10" type="expendable" firstFill="false" shape="square" column="cwa5" line="lwa4"/>
         </div>
     );
 }

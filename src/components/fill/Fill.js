@@ -19,8 +19,8 @@ class Fill extends React.Component {
             this.fillChar = "e";
             this.emptyChar = "d";
         } else {
-            this.fillChar = "f";
-            this.emptyChar = "a";
+            this.fillChar = "a";
+            this.emptyChar = "f";
         }
 
         this.context.createField(props.type, props.name, this.len, props.firstFill === "true" ? 1 : 0);
