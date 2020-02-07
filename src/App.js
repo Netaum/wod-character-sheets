@@ -8,8 +8,24 @@ class App extends React.Component {
     update: this.changeState,
     updateState: (state) => this.setState(state),
     createField: this.createField,
-    createArray: this.createArray
+    createArray: this.createArray,
+    createHeader: this.createHeader,
+    changeHeader: this.changeHeader
   };
+
+  createHeader(field, key, value) {
+    const sheet = this;
+    if(!sheet[field]) {
+      sheet[field] = {};
+    }
+
+    const sheetField = sheet[field]
+    if(!sheetField[key]) {
+      sheetField[key] = {
+        value: value
+      };
+    }
+  }
 
   createField(field, key, length, initialValue) {
     const sheet = this;
@@ -46,19 +62,17 @@ class App extends React.Component {
     const sheet = this;
     let attribute = sheet[field][key];
     attribute.fill = this.createArray(attribute.fill, attribute.startValue, index);
-    // for (let i = 0; i < attribute.fill.length; i++) {
-    //   if (i < attribute.startValue)
-    //     attribute.fill[i] = true;
-    //   else if (i === index) {
-    //     attribute.fill[i] = !attribute.fill[i];
-    //   }
-    //   else {
-    //     attribute.fill[i] = index >= i ? true : false;
-    //   }
-    // }
 
     attribute.value = attribute.fill.reduce((total, i) => total + (i === true ? 1 : 0));
     this.updateState(sheet);
+  }
+
+  changeHeader(field, key, value) {
+    const sheet = this;
+    let header = sheet[field][key];
+    header.value = value;
+    this.updateState(sheet);
+    console.log(sheet);
   }
 
   render() {

@@ -1,16 +1,19 @@
 import React from 'react';
 import './Input.css';
+import SheetContext from '../../contexts/SheetContext'
 
 class Input extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            value: '',
-        };
+    static contextType = SheetContext;
+
+    constructor(props, context) {
+        super(props, context);
+        this.context.createHeader(props.type, props.name, "");
+
     }
 
     handleEvent(event){
-        this.setState({value: event.target.value});
+        const props = this.props;
+        this.context.changeHeader(props.type, props.name, event.target.value);
     }
 
     inputReader() {
@@ -25,16 +28,17 @@ class Input extends React.Component {
     }
 
     handleClick(value) {
-        console.log(value.item);
-        this.setState({value: value.item});
+        const props = this.props;
+        this.context.changeHeader(props.type, props.name, value.item);
     }
 
     dropdownReader() {
+        const props = this.props;
         return (
             <div className={`font-header ${this.props.column} ${this.props.line} dropdown-base`}>
                 <div className="position">
                     <span>{this.props.name}:</span>
-                    <input type="text" className="input_header input_header_short input-dropdown" readOnly value={this.state.value} />
+                    <input type="text" className="input_header input_header_short input-dropdown" readOnly value={this.context[props.type][props.name].value} />
                     <div className="dropdown-content">
                     {this.props.options.map((item) => (
                         <span key={item} onClick={() => this.handleClick({item})}>{item}</span>
@@ -47,7 +51,7 @@ class Input extends React.Component {
     
     render() {
         let input;
-        if(this.props.type === 'input'){
+        if(this.props.mode === 'input'){
             input = this.inputReader();
         }
         else {
