@@ -8,6 +8,8 @@ class Input extends React.Component {
     constructor(props, context) {
         super(props, context);
         this.context.createHeader(props.type, props.name, "");
+        const size = parseInt(props.textSize);
+        this.size = isNaN(size) ? 120 : size;
 
     }
 
@@ -21,7 +23,7 @@ class Input extends React.Component {
             <div className={`font-header ${this.props.column} ${this.props.line}`}>
                 <div className="position">
                     <span>{this.props.name}:</span>
-                    <input type="text" className="input_header" onChange={this.handleEvent.bind(this)} />
+                    <input type="text" className="input_header" style={{width: this.size + "px"}} onChange={this.handleEvent.bind(this)} />
                 </div>
             </div>
         );
