@@ -17,7 +17,7 @@
     -ms-transform-origin: 0 100%;
     -webkit-transform-origin: 0 100%;
     unicode-bidi: bidi-override;
-    z-index: 2;
+    z-index: 99;
     background-color: white;
 }
 .wod-attribute{
@@ -29,6 +29,7 @@
     font-size: 12px;
     margin-top: -8.4px;
 }
+
 
 .wod-spendable{
     font-size: 14px;
@@ -75,17 +76,17 @@
 }
 
 .cwd1{
-    left: 21.4536%;
+    left: 21%;
 }
 .cwd2{
-    left: 52.0393%;
+    left: 51.6%;
 }
 
 .lwd1{
-    top: 61.1%;
+    top: 60.7%;
 }
 .lwd2{
-    top: 73.9334%;
+    top: 73.5%;
 }
 
 .cwm1{

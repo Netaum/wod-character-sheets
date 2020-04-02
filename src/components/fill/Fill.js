@@ -13,6 +13,8 @@ class Fill extends React.Component {
             this.type = "wod-attribute";
         else if (props.type === "skill")
             this.type = "wod-skill";
+        else if (props.type === "discipline")
+            this.type = "discipline";
         else this.type = "wod-spendable";
 
         if (props.shape === "circle") {
@@ -22,8 +24,8 @@ class Fill extends React.Component {
             this.fillChar = "a";
             this.emptyChar = "f";
         }
-
-        this.context.createField(props.type, props.name, this.len, props.firstFill === "true" ? 1 : 0);
+        if (props.type !== "discipline")
+            this.context.createField(props.type, props.name, this.len, props.firstFill === "true" ? 1 : 0);
     }
     handleClick(index) {
         const props = this.props;
@@ -39,8 +41,9 @@ class Fill extends React.Component {
     line(position) {
         const props = this.props;
         const values = this.context[props.type][props.name].fill;
+        const type = this.type === "discipline" ? "wod-skill" : this.type;
         return (
-            <span id={this.props.name} className={`wod ${this.type} ${position}`}>
+            <span id={this.props.name} className={`wod ${type} ${position}`}>
                 {values.map((e, i) => (
                     this.item(i, e)
                 ))}

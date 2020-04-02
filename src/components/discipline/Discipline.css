@@ -1,0 +1,228 @@
+.font-discipline{
+    position: absolute;
+    font-family: delavan;
+    margin:0;
+    height: 14px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 14px;
+    opacity: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    text-transform: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    mix-blend-mode: normal;
+    font-style: normal;
+    white-space: nowrap;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: auto;
+    margin-top:-8.6px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.cd1{
+    left:6.0504%;
+}
+
+.cd2{
+    left:36.3025%;
+}
+
+.input_discipline{
+    font: 10px 'Oleo Script', Helvetica, sans-serif;
+    position: relative;
+    color: #2b2b2b;
+    width: 135px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    left:-138px;
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+}
+
+.input_discipline_name{
+    left: -146px;
+}
+
+.input_background{
+    font: 10px 'Oleo Script', Helvetica, sans-serif;
+    position: relative;
+    color: #2b2b2b;
+    width: 130px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    left:-147px;
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+}
+
+.input_extra{
+    font: 10px 'Oleo Script', Helvetica, sans-serif;
+    position: relative;
+    color: #2b2b2b;
+    width: 83px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    left:-87px;
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+}
+
+.dropdown_content span {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_content span:hover {background-color: gainsboro}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+.dicipline_len {
+    top:90%
+}
+
+
+.ld1 {
+    top:61.0015%;
+}
+.ld2 {
+    top:62.902%;
+}
+.ld3 {
+    top:64.8025%;
+}
+.ld4 {
+    top:66.7029%;
+}
+.ld5 {
+    top:68.6034%;
+}
+.ld6 {
+    top:70.5039%;
+}
+
+.ld7 {
+    top:73.8298%;
+}
+.ld8 {
+    top:75.7303%;
+}
+.ld9 {
+    top:77.6307%;
+}
+.ld10 {
+    top:79.5312%;
+}
+.ld11 {
+    top:81.4317%;
+}
+.ld12 {
+    top:83.3322%;
+}
+
+.line {
+    position: relative;
+    z-index: 10;
+}
+
+.line_power {
+    position: relative;
+}
+
+.input_discipline{
+    font: 10px 'Oleo Script', Helvetica, sans-serif;
+    position: relative;
+    color: #2b2b2b;
+    width: 135px;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    left:-132px;
+    background-color: transparent;
+    border: none;
+    border-color: transparent;
+}
+
+.dropdown_discipline {
+    font: 12px Bold 'Oleo Script', Helvetica, sans-serif;
+}
+
+
+.font_header{
+    position: absolute;
+    /* font-family: delavan; */
+    margin:0;
+    height: 14px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    opacity: 1;
+    letter-spacing: 0em;
+    text-align: left;
+    color: black;
+    text-transform: none;
+    padding-bottom: 0;
+    padding-top: 0;
+    mix-blend-mode: normal;
+    font-style: normal;
+    white-space: nowrap;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: auto;
+    margin-top:-7.6px;
+}
+
+.dropdown_base {
+    display: inline-block;
+}
+
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 5;
+    top: 10px;
+}
+
+.position {
+    position: relative;
+}
+
+.discipline_header {
+    font: 11px 'Oleo Script', Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-color: transparent;
+    color: #2b2b2b;
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+    position: relative;
+    top: -2px;
+}
+
+.dd1 {
+    left: -9px;
+}
+
+.dd2 {
+    left: -51px;
+}
+
+.input_header_short {
+    width: 98px;
+}

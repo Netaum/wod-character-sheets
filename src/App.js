@@ -7,11 +7,20 @@ class App extends React.Component {
   state = {
     update: this.changeState,
     updateState: (state) => this.setState(state),
+    //updateState: this.updateState,
     createField: this.createField,
     createArray: this.createArray,
     createHeader: this.createHeader,
-    changeHeader: this.changeHeader
+    changeHeader: this.changeHeader,
+    createDiscipline: this.createDiscipline,
+    changeDiscipline: this.changeDiscipline,
+    changeDisciplinePower: this.changeDisciplinePower,
   };
+
+  updateState(state) {
+    console.log(state);
+    this.setState(state);
+  }
 
   createHeader(field, key, value) {
     const sheet = this;
@@ -43,6 +52,22 @@ class App extends React.Component {
     this.updateState(sheet);
   }
 
+  createDiscipline(field, key) {
+    const sheet = this;
+    if(!sheet[field])
+      sheet[field] = {};
+    
+    if(!sheet[field][key]) {
+      sheet[field][key] = {
+        startValue: 0,
+        value: 0,
+        name: "",
+        fill: this.createArray(Array(5), 0, -1),
+        powers: {}
+      };
+    }
+  }
+
   createArray(array, initialValue, index) {
     for (let i = 0; i < array.length; i++) {
       if (i < initialValue) {
@@ -65,6 +90,7 @@ class App extends React.Component {
 
     attribute.value = attribute.fill.reduce((total, i) => total + (i === true ? 1 : 0));
     this.updateState(sheet);
+    console.log(sheet);
   }
 
   changeHeader(field, key, value) {
@@ -73,6 +99,22 @@ class App extends React.Component {
     header.value = value;
     this.updateState(sheet);
     console.log(sheet);
+  }
+
+  changeDiscipline(field, key, value) {
+    const sheet = this;
+    let header = sheet[field][key];
+    header.name = value;
+    this.updateState(sheet);
+  }
+
+  changeDisciplinePower(field, key, level, description) {
+    const sheet = this;
+    if(!sheet[field][key].powers[level])
+      sheet[field][key].powers[level] = "";
+    
+    sheet[field][key].powers[level] = description;
+    this.updateState(sheet);
   }
 
   render() {

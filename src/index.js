@@ -17,6 +17,8 @@ import skill_en from "./translations/en/skill.json";
 import skill_pt from "./translations/pt/skill.json";
 import labels_en from "./translations/en/labels.json";
 import labels_pt from "./translations/pt/labels.json";
+import disciplines_en from "./translations/en/disciplines.json";
+import disciplines_pt from "./translations/pt/disciplines.json";
 
 i18n
   .use(initReactI18next) 
@@ -28,6 +30,7 @@ i18n
         ability: ability_en,
         skill: skill_en,
         labels: labels_en,
+        disciplines: disciplines_en
       },
       pt: {
         common: common_pt,
@@ -35,6 +38,7 @@ i18n
         ability: ability_pt,
         skill: skill_pt,
         labels: labels_pt,
+        disciplines: disciplines_pt
       }
     },
     lng: "en",
